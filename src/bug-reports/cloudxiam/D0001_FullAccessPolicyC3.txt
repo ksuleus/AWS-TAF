@@ -1,0 +1,13 @@
+D0001
+Title: 'FullAccessPolicyC3' policy enables only GET actions for S3 service for default version
+Environment details: version - 2 of cloudxiam
+Severity: Major
+Priority: Normal
+
+Issue summary: 'FullAccessPolicyC3' policy enables GET actions for S3 service for default version
+Steps to reproduce: 
+1. Get default version of 'FullAccessPolicyC3' policy 
+2. Get Document from default version
+3. Get Action value from Document
+Expected result: 'FullAccessPolicyC3' policy enables all actions for S3 service - Action: 's3:*'
+Actual result: 'FullAccessPolicyC3' policy enables GET actions for S3 service - Action: 's3:Get*'
